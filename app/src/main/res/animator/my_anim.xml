@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+	android:interpolator="@android:anim/linear_interpolator"
+	android:duration="5000">
+	<!-- 定义缩放变换 -->
+	<scale android:fromXScale="1.0"
+		android:toXScale="1.4"
+		android:fromYScale="1.0"
+		android:toYScale="0.6"
+		android:pivotX="50%"
+		android:pivotY="50%"
+		android:fillAfter="true"
+		android:duration="2000"/>
+	<!-- 定义位移变换 -->
+	<translate android:fromXDelta="10"
+		android:toXDelta="130"
+		android:fromYDelta="30"
+		android:toYDelta="-80"
+		android:duration="2000"/>
+
+
+	<alpha
+		android:fromAlpha="0.1"
+		android:toAlpha="1.0"
+		android:duration="10000"
+		/>
+	<!-- 透明度控制动画效果 alpha
+            浮点型值：
+                fromAlpha 属性为动画起始时透明度
+                toAlpha   属性为动画结束时透明度
+                说明:
+                    0.0表示完全透明
+                    1.0表示完全不透明
+                以上值取0.0-1.0之间的float数据类型的数字
+
+            长整型值：
+                duration  属性为动画持续时间
+                说明:
+                    时间以毫秒为单位
+    -->
+</set>
